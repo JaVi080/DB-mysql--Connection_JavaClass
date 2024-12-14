@@ -7,14 +7,6 @@ public class Main {
         //Input from user for saving
         Scanner sc=new Scanner(System.in);
 
-        /*do {
-            System.out.println("Enter Ur Name : ");
-            String name = sc.nextLine();
-            System.out.println("Course : ");
-            String course = sc.nextLine();
-            System.out.println("Your Marks : ");
-            int marks = sc.nextInt();
-        }while(choice=='y');*/
         String url="jdbc:mysql://localhost:3306/clg";
         String user="root";
         String password="0348jav.";
@@ -57,6 +49,7 @@ public class Main {
                 System.out.println("want to continue :? ");
                 choice=sc.nextLine();
             }while(choice.equalsIgnoreCase("y"));
+
             String sql2="delete from student where id=20";
             PreparedStatement statement2= connection.prepareStatement(sql2);
             int rowsAffected = statement2.executeUpdate();
