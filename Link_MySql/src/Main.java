@@ -8,8 +8,8 @@ public class Main {
         Scanner sc=new Scanner(System.in);
 
         String url="jdbc:mysql://localhost:3306/clg";
-        String user="root";
-        String password="0348jav.";
+        String user=//user name;
+        String password=//ur password
         try{
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection(url,user,password);
